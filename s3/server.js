@@ -12,6 +12,9 @@ const io = socketIO(server);
 const app = express();
 const port = process.env.PORT || 3000;
 
+const bucketName = 'audio-test77';
+const jsonKey = 'transcript1.json';
+
 const s3Client = new S3Client({
     region: "ap-south-1",
     credentials: {
